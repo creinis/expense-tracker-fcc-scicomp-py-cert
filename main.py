@@ -252,5 +252,21 @@ def main():
     while True:
         print('\nExpense Tracker')
 
+# Step 25
+
+# The while loop you created in the previous step is an infinite loop that will allow the program 
+# to continuously present menu options until the user decides to exit.
+
+# After the print() call, add another one to print the string 1. Add an expense.
+
+while True:
+    print('\nExpense Tracker')
+    print('1. Add an expense')
+    print('2. List all expenses')
+    print('3. Show total expenses')
+    print('4. Filter expenses by category')
+    print('5. Exit')
+
+
 
 
