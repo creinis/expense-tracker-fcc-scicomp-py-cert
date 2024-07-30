@@ -53,4 +53,12 @@ def add_expense(expenses, amount, category):
 def add_expense(expenses, amount, category):
     expenses.append({'amount': amount})
 
+# Step 5
+
+# Add another key-value pair to the dictionary you are appending to the expense list. 
+# Use the string category as the key, and the category parameter as the value.
+
+def add_expense(expenses, amount, category):
+    expenses.append({'amount': amount, 'category': category})
+
 
