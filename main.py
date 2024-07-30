@@ -238,4 +238,19 @@ def filter_expenses_by_category(expenses, category):
 def main():
     expenses = []
 
+# Step 24 - While Loop
+
+# A while loop is another kind of loop that runs a portion of code until a specified condition is True:
+
+    # while condition:
+    #     <code>
+
+# Below the expense list, create a while loop. Use True for the condition, and print the string \nExpense Tracker inside the loop body to show the title of the program.
+
+def main():
+    expenses = []
+    while True:
+        print('\nExpense Tracker')
+
+
 
