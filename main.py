@@ -200,5 +200,14 @@ def total_expenses(expenses):
 def filter_expenses_by_category(expenses , category):
     pass
 
+# Step 20
+
+# Within the filter_expenses_by_category function, replace pass with a lambda function. 
+# Use expense as the parameter and return the comparison between 
+# the value of the category key of the expense dictionary and category.
+
+def filter_expenses_by_category(expenses, category):
+    lambda expense: expense['category'] == category
+
 
 
