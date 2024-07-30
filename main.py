@@ -117,4 +117,17 @@ def print_expenses(expenses):
 def total_expenses(expenses):
     pass
 
+# Step 11 - Lambda Function
+
+# Lambda functions are brief, anonymous functions in Python, ideal for simple, one-time tasks. 
+# They are defined by the lambda keyword, and they use the following syntax:
+
+lambda x: expr
+
+# In the example above, x is a parameter to be use in the expression expr. 
+# Create a test variable and assign it a lambda function that takes an x parameter and returns x * 2.
+
+test = lambda x: x*2
+
+
 
