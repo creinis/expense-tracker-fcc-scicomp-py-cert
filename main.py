@@ -209,5 +209,21 @@ def filter_expenses_by_category(expenses , category):
 def filter_expenses_by_category(expenses, category):
     lambda expense: expense['category'] == category
 
+# Step 21
+
+# The filter() function allows you to select items from an iterable, such as a list, 
+# based on the output of a function:
+
+filter(my_function, my_list)
+
+# filter() returns an iterator in which the elements of my_list are included, 
+# for which my_function returns True. An iterator is a special object that enables 
+# you to iterate over the elements of a collection, like a list.
+
+# Within the filter_expenses_by_category function, call filter() passing the lambda function 
+# you wrote in the previous step as the first argument and the expenses list as the second argument.
+
+def filter_expenses_by_category(expenses, category):
+    return filter(lambda expense: expense['category'] == category, expenses)
 
 
