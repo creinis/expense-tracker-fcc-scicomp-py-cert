@@ -332,5 +332,109 @@ while True:
             if choice == '1':
                 amount = float(input('Enter amount: '))
 
+# Step 33
+
+# After getting the expense details, you need to call the add_expense function to add the new expense to the expenses list.
+
+# After getting the amount and category using input(), call the add_expense function, passing three arguments: expenses, amount and category.
+
+#    expenses is the empty list created in the main function earlier in this project.
+#    amount is the amount of the expense.
+#    category is the category of the expense.
+
+    if choice == '1':
+        amount = float(input('Enter amount: '))
+        category = input('Enter category: ')
+        add_expense(expenses, amount, category)
+
+# Step 34
+
+# To list all expenses, you can use an elif statement after an if statement. 
+# The elif checks additional conditions and only works following an if statement.
+
+# Create an elif statement to check if the user's choice equals the string 2. 
+# Inside the elif statement, print the string \nAll Expenses:.
+
+        if choice == '1':
+            amount = float(input('Enter amount: '))
+            category = input('Enter category: ')
+            add_expense(expenses, amount, category)
+        elif choice == '2':
+            print('\nAll Expenses:')
+
+# Step 35
+
+#After the print() call, call the print_expenses function to display all the expenses that have been added so far. 
+# Pass the expenses list as the argument.
+
+# Step 36
+
+# To show the total expenses, create an elif statement that checks if choice == '3'.
+
+# If it's true, it means the user wants to see the total expenses. 
+# So call print() and pass the string \nTotal Expenses: as the first argument and total_expenses(expenses) 
+# as the second argument.
+
+# Step 37
+
+# Create another elif statement that checks if choice == '4'. 
+# Inside the new elif, create a variable category and assign it input('Enter category to filter: ') 
+# to filter the expense category.
+
+# Step 38
+
+# After getting the category, print the following f-string f'\nExpenses for {category}:'.
+
+# Step 39
+
+# After your print() call, you need to filter the expenses and print the filtered list. 
+# Declare a variable expenses_from_category and assign it a call to filter_expenses_by_category 
+# passing expenses and category as the argument.
+
+# Step 40
+
+# Still within the elif statement, pass expenses_from_category iterator to a print_expenses call.
+
+# Step 41
+
+# To provide a way to exit the program, use another elif statement to check if choice equals the string 5.
+
+# Inside the new elif statement, print the string Exiting the program. 
+# to show that the program is terminating its execution.
+
+# Step 42
+
+# Finally, to stop the execution of the while loop, add the break statement inside your last elif statement.
+
+    while True:
+            print('\nExpense Tracker')
+            print('1. Add an expense')
+            print('2. List all expenses')
+            print('3. Show total expenses')
+            print('4. Filter expenses by category')
+            print('5. Exit')
+        
+            choice = input('Enter your choice: ')
+
+            if choice == '1':
+                amount = float(input('Enter amount: '))
+                category = input('Enter category: ')
+                add_expense(expenses, amount, category)
+
+            elif choice == '2':
+                print('\nAll Expenses:')
+                print_expenses(expenses)
+
+            elif choice == '3':
+                print('\nTotal Expenses: ', total_expenses(expenses))
+
+            elif choice == '4':
+                category = input('Enter category to filter: ')
+                print(f'\nExpenses for {category}:')
+                expenses_from_category = filter_expenses_by_category(expenses, category)
+                print_expenses(expenses_from_category)
+            elif choice == '5':
+                print('Exiting the program.')
+                break
 
 
