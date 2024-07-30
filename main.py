@@ -299,4 +299,16 @@ while True:
     if choice == '1':
         amount = input()
 
+# Step 30
+
+# Inside the if statement, you should ask the user to enter the amount for the expense and store it in a variable.
+
+# Pass the string Enter amount: to your empty input() call, so you can store the expense.
+
+    choice = input('Enter your choice: ')
+    
+    if choice == '1':
+        amount = input('Enter amount: ')
+
+
 
