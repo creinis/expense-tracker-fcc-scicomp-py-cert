@@ -285,5 +285,18 @@ while True:
             print('5. Exit')
             choice = input('Enter your choice: ')
 
+# Step 29
+
+# You are going to use conditional statements to check the user's choice. 
+# If the choice is 1, it means the user wants to add an expense.
+
+# Still in the while loop, under the choice variable, write an if statement to check if choice equals the string 1. 
+# If it's true, it will be the starting point for adding a new expense.
+
+# Inside the if statement body, declare a variable amount and assign it an empty input() call.
+
+    choice = input('Enter your choice: ')
+    if choice == '1':
+        amount = input()
 
 
