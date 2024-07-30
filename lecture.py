@@ -437,4 +437,12 @@ while True:
                 print('Exiting the program.')
                 break
 
+# Step 44
 
+# You can use the __name__ variable to determine if a Python script is being run as the main program or if it is being imported as a module (code written in another Python file).
+# If the value of __name__ is set to '__main__', it implies that the current script is the main program, and not a module.
+# As a final step, create an if statement to check if __name__ == '__main__', and move the main() call inside this block.
+# With that, the expense tracker project is complete!
+
+    if __name__ == '__main__':  
+        main()
