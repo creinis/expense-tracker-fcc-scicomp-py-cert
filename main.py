@@ -165,4 +165,17 @@ print(map(test, [2, 3, 5, 8]))
 test = lambda x: x * 2
 print(sum(map(test, [2, 3, 5, 8])))
 
+# Step 15
+
+# Next, you are going to implement the same logic to the total_expenses function.
+# For now, delete both the test function and the print() call.
+
+# Step 16
+
+# Within your total_expenses function, replace pass with a lambda function. 
+# Use expense as the parameter and return the value of the amount key in the expense dictionary.
+
+def total_expenses(expenses):
+    lambda expense: expense['amount']
+
 
